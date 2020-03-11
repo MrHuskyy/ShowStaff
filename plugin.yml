@@ -1,0 +1,23 @@
+name: Staff
+main: Staff\Main
+version: 1.0.0
+api: [3.0.0, 4.0.0]
+author: TurtleSh0ck a.k.a MrHuskyy
+description: Show the staff members
+commands:
+  stafflist:
+    description: Give list of staff
+    usage: "/staff"
+    permission: stafflist.list
+  staffadd:
+    description: Add a staff member
+    usage: "/staffadd <O/A/M/T-M> <Full Username> "
+    permission: stafflist.add
+
+permissions:
+  staff.cmd:
+    default: true
+    description: "Allow listing staff"
+  staffadd.cmd:
+    default: true
+    description: "Allow modify staff list"
